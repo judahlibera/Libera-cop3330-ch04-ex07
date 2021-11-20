@@ -1,5 +1,9 @@
-#include <iostream>
-#include <string>
+/*
+ *  UCF COP3330 Fall 2021 Assignment 5 Solution
+ *  Copyright 2021 Judah Libera
+ */
+
+#include "header.h";
 
 using namespace std;
 int main() {
@@ -84,11 +88,11 @@ int main() {
     if (stoi(num) > 9 || stoi(num2) > 9)
         error = true;
 
-    if (op == "+" || op == "plus") {
+    if (op == "+" || op == "plus" || op == "add") {
         optype = "sum";
         res = stof(num) + stof(num2);
     }
-    else if (op == "-" || op == "minus"){
+    else if (op == "-" || op == "minus" || op == "subtract"){
         optype = "difference";
         res = stof(num) - stof(num2);
     }
